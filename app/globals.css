@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBF3E2;
+  --foreground: #3E0D0D;
+
+  --color-gabhara: #3E0D0D;
+  --color-sindoor: #A72B1D;
+  --color-gold: #C8922A;
+  --color-marigold: #E3A93C;
+  --color-haldi: #FBF3E2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gabhara: var(--color-gabhara);
+  --color-sindoor: var(--color-sindoor);
+  --color-gold: var(--color-gold);
+  --color-marigold: var(--color-marigold);
+  --color-haldi: var(--color-haldi);
+
+  --font-display: var(--font-tiro);
+  --font-sans: var(--font-mukta);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-15deg); }
+  40% { transform: rotate(12deg); }
+  60% { transform: rotate(-8deg); }
+  80% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.bell-swing {
+  animation: swing 1.2s ease-in-out;
+  transform-origin: top center;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(0.95); }
+}
+
+.diya-flicker {
+  animation: flicker 1.6s ease-in-out infinite;
+}
+
+.diya-flicker-alt {
+  animation: flicker 1.9s ease-in-out infinite 0.4s;
+}
+
+@keyframes curtain-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes curtain-right {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.curtain-open-left {
+  animation: curtain-left 2s ease-in-out 0.3s forwards;
+}
+
+.curtain-open-right {
+  animation: curtain-right 2s ease-in-out 0.3s forwards;
 }
