@@ -18,17 +18,19 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto overflow-hidden rounded-2xl border-4 border-gold">
           <img
-            src="/photos/2026/hero.png"
-            alt="Ganpati decoration 2026"
-            className="w-full h-auto"
-          />
+  src="/photos/2026/hero.jpg"
+  alt="Ganpati decoration 2026"
+  className="w-full h-auto"
+  loading="eager"
+  fetchPriority="high"
+/>
         </div>
 
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-4 mt-6">
           <p className="font-sans text-haldi">
             {lang === "en"
-              ? "Our family's Ganpati tradition, since 2011 — Dallas, Texas."
-              : "आमच्या कुटुंबाची गणपती परंपरा, २०११ पासून — डॅलस, टेक्सास."}
+              ? "Our family's Ganpati tradition, since 2010 — Dallas, Texas."
+              : "आमच्या कुटुंबाची गणपती परंपरा, २०१० पासून — डॅलस, टेक्सास."}
           </p>
           <Link
             href="/2026"

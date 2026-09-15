@@ -14,8 +14,8 @@ export default function About() {
         <div className="w-16 h-1 bg-gold mx-auto rounded-full" />
         <p className="font-sans text-lg">
           {lang === "en"
-            ? "Since 2011, our family has welcomed Bappa home every year with a new story — a theme imagined, built by hand, and celebrated together. From Maharashtra to Dallas, Texas, the tradition has traveled with us. Fifteen years of themes, and every one of them made with our own hands. This site is where we keep those stories, year by year."
-            : "२०११ पासून, दरवर्षी आमचं कुटुंब बाप्पाचं स्वागत एका नव्या गोष्टीने करतं — एक संकल्पना, जी आम्ही कल्पितो, स्वतःच्या हातांनी घडवतो आणि मिळून साजरी करतो. महाराष्ट्रापासून डॅलस, टेक्सासपर्यंत ही परंपरा आमच्यासोबत प्रवास करत आली आहे. पंधरा वर्षे, पंधरा सजावटी — प्रत्येक स्वतःच्या हातांनी घडवलेली. त्या सगळ्या गोष्टी इथे वर्षानुवर्षे जपून ठेवल्या आहेत."}
+            ? "Since 2010, our family has welcomed Bappa home every year with a new story — a theme imagined, built by hand, and celebrated together. From Maharashtra to Dallas, Texas, the tradition has traveled with us. Fifteen years of themes, and every one of them made with our own hands. This site is where we keep those stories, year by year."
+            : "२०१० पासून, दरवर्षी आमचं कुटुंब बाप्पाचं स्वागत एका नव्या गोष्टीने करतं — एक थीम, जी आम्ही कल्पितो, स्वतःच्या हातांनी घडवतो आणि मिळून साजरी करतो. महाराष्ट्रापासून डॅलस, टेक्सासपर्यंत ही परंपरा आमच्यासोबत प्रवास करत आली आहे. पंधरा वर्षे, पंधरा सजावटी — प्रत्येक स्वतःच्या हातांनी घडवलेली. त्या सगळ्या गोष्टी इथे वर्षानुवर्षे जपून ठेवल्या आहेत."}
         </p>
 
         <div className="flex justify-center gap-8 sm:gap-14 mt-4">
