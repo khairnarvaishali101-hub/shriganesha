@@ -3,6 +3,9 @@
 import Link from "next/link";
 import ganpati2026 from "@/content/years/2026.json";
 import { useLanguage } from "@/components/LanguageProvider";
+import { formatYear } from "@/lib/marathiDigits";
+
+const years = [2026, 2025];
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -18,12 +21,12 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto overflow-hidden rounded-2xl border-4 border-gold">
           <img
-  src="/photos/2026/hero.jpg"
-  alt="Ganpati decoration 2026"
-  className="w-full h-auto"
-  loading="eager"
-  fetchPriority="high"
-/>
+            src="/photos/2026/hero-2026.jpg"
+            alt="Ganpati decoration 2026"
+            className="w-full h-auto"
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
 
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-4 mt-6">
@@ -38,7 +41,7 @@ export default function Home() {
           >
             {lang === "en"
               ? `${ganpati2026.year} — ${ganpati2026.theme.en}`
-              : `${ganpati2026.year} — ${ganpati2026.theme.mr}`}
+              : `${formatYear(ganpati2026.year, "mr")} — ${ganpati2026.theme.mr}`}
           </Link>
         </div>
       </section>
@@ -50,15 +53,18 @@ export default function Home() {
             {lang === "en" ? "The years" : "वर्षानुवर्षे"}
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/2026" className="font-sans border border-gold px-6 py-2 rounded-full hover:bg-gold hover:text-gabhara transition-colors">
-              2026
-            </Link>
-            <Link href="/2025" className="font-sans border border-gold px-6 py-2 rounded-full hover:bg-gold hover:text-gabhara transition-colors">
-              2025
-            </Link>
+            {years.map((year) => (
+              <Link
+                key={year}
+                href={`/${year}`}
+                className="font-sans border border-gold px-6 py-2 rounded-full hover:bg-gold hover:text-gabhara transition-colors"
+              >
+                {formatYear(year, lang)}
+              </Link>
+            ))}
           </div>
           <p className="font-sans text-haldi/60 text-sm">
-            {lang === "en" ? "More years coming soon — back to 2011." : "आणखी वर्षे लवकरच — २०११ पर्यंत."}
+            {lang === "en" ? "More years coming soon — back to 2010." : "आणखी वर्षे लवकरच — २०१० पर्यंत."}
           </p>
         </div>
       </section>
