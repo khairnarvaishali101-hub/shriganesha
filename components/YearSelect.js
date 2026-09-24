@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/components/LanguageProvider";
+import { formatYear } from "@/lib/marathiDigits";
 
 const years = [2026, 2025];
 
@@ -27,7 +28,7 @@ export default function YearSelect() {
       </option>
       {years.map((year) => (
         <option key={year} value={year}>
-          {year}
+          {formatYear(year, lang)}
         </option>
       ))}
     </select>
