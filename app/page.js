@@ -1,5 +1,5 @@
 "use client";
-
+/*import PressTabs from "@/components/PressTabs";*/
 import Link from "next/link";
 import ganpati2026 from "@/content/years/2026.json";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto overflow-hidden rounded-2xl border-4 border-gold">
           <img
-            src="/photos/2026/hero.jpg"
+            src="/photos/2026/hero-2026.jpg"
             alt="Ganpati decoration 2026"
             className="w-full h-auto"
             loading="eager"

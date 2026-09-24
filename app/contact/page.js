@@ -3,9 +3,9 @@
 import { useLanguage } from "@/components/LanguageProvider";
 
 const contact = {
-  email: "sshaly@yahoo.com",
-  instagram: "https://instagram.com/vaishalikshimpi",
-  youtube: "https://www.youtube.com/@ShaktishaliS/videos",
+  email: "your@email.com",
+  instagram: "https://instagram.com/yourhandle",
+  youtube: "https://www.youtube.com/@yourchannel",
 };
 
 export default function Contact() {
@@ -25,13 +25,13 @@ export default function Contact() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-3 mt-4">
-          <a
+          
             href={`mailto:${contact.email}`}
             className="font-sans bg-gabhara text-haldi px-6 py-3 rounded-full hover:bg-sindoor transition-colors"
           >
             {lang === "en" ? "Email us" : "ईमेल करा"}
           </a>
-          <a
+          
             href={contact.instagram}
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Contact() {
           >
             Instagram
           </a>
-          <a
+          
             href={contact.youtube}
             target="_blank"
             rel="noopener noreferrer"

@@ -41,8 +41,9 @@ export default function Header() {
 
   const links = [
     { href: "/", en: "Home", mr: "मुख्यपृष्ठ" },
-    { href: "/about", en: "About", mr: "आमच्याबद्दल" },
+    { href: "/about", en: "About Us", mr: "आमच्याबद्दल" },
     { href: "/story", en: "Our Story", mr: "संकल्पना" },
+    { href: "/press", en: "In the News", mr: "प्रसिद्धी" },
     { href: "/contact", en: "Contact", mr: "संपर्क" },
   ];
 

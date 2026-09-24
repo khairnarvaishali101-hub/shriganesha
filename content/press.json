@@ -1,0 +1,26 @@
+{
+  "newspaper": [
+    {
+      "year": 2026,
+      "outlet": "Outlet name",
+      "date": "2026-09-16",
+      "title": {
+        "en": "Headline in English",
+        "mr": "मराठी मथळा"
+      },
+      "image": "/press/2026/outlet-2026-09-16.jpg"
+    }
+  ],
+  "tv": [
+    {
+      "year": 2026,
+      "outlet": "Channel name",
+      "date": "2026-09-17",
+      "title": {
+        "en": "News report on the 2026 decoration",
+        "mr": "२०२६ च्या सजावटीवरील बातमी"
+      },
+      "videoId": "YOUTUBE_ID"
+    }
+  ]
+}
