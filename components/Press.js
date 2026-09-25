@@ -4,7 +4,6 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 import press from "@/content/press.json";
 
-const YOUTUBE_CHANNEL = "https://www.youtube.com/@ShaktishaliS/videos";
 
 export default function Press() {
   const { lang } = useLanguage();
@@ -42,14 +41,7 @@ export default function Press() {
           ))}
         </div>
 
-        <a
-          href={YOUTUBE_CHANNEL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 text-center font-sans font-semibold bg-gabhara text-haldi px-6 py-3 rounded-full hover:bg-sindoor transition-colors"
-        >
-          📺 {t("TV coverage on our YouTube channel", "टीव्ही बातम्या आमच्या YouTube चॅनेलवर")} →
-        </a>
+        
       </div>
     </section>
   );
