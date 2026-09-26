@@ -46,6 +46,7 @@ export default function Header() {
     { href: "/story", en: "Our Story", mr: "संकल्पना" },
     { href: "/press", en: "In the News", mr: "प्रसिद्धी" },
     { href: YOUTUBE_CHANNEL, en: "📺 TV Coverage", mr: "📺 टीव्ही", external: true },
+    { href: "/awards", en: "🏆 Awards", mr: "🏆 पुरस्कार" },
     { href: "/contact", en: "Contact", mr: "संपर्क" },
   ];
 
