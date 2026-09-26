@@ -1,16 +1,6 @@
 [
   {
     "year": 2026,
-    "outlet": "Khandesh Samrat · खान्देश सम्राट",
-    "date": "2026-09-22",
-    "title": {
-      "en": "The 'Dnyan Express' runs in Dallas — a unique journey of technology's evolution around Bappa",
-      "mr": "डॅलसमध्ये (अमेरिका) धावतेय 'ज्ञान एक्सप्रेस' — बाप्पांभोवती तंत्रज्ञानाच्या उत्क्रांतीचा अनोखा प्रवास!"
-    },
-    "image": "/press/2026/khandesh-samrat-2026-09-22.png"
-  },
-  {
-    "year": 2026,
     "outlet": "Gavkari · गांवकरी, Nashik",
     "date": "2026-09-19",
     "title": {
@@ -18,6 +8,16 @@
       "mr": "नाशिकच्या कुटुंबाने अमेरिकेत साकारला बाप्पाचा अनोखा देखावा"
     },
     "image": "/press/2026/gavkari-2026-09-19.png"
+  },
+  {
+    "year": 2026,
+    "outlet": "Khandesh Samrat · खान्देश सम्राट",
+    "date": "2026-09-22",
+    "title": {
+      "en": "The 'Dnyan Express' runs in Dallas — a unique journey of technology's evolution around Bappa",
+      "mr": "डॅलसमध्ये (अमेरिका) धावतेय 'ज्ञान एक्सप्रेस' — बाप्पांभोवती तंत्रज्ञानाच्या उत्क्रांतीचा अनोखा प्रवास!"
+    },
+    "image": "/press/2026/khandesh-samrat-2026-09-22.png"
   },
   {
     "year": 2026,

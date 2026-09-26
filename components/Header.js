@@ -13,7 +13,7 @@ import y2025 from "@/content/years/2025.json";
 // Add each new year's JSON import above and to this list (newest first).
 const years = [y2026, y2025];
 
-const YOUTUBE_CHANNEL = "https://www.youtube.com/@ShaktishaliS/videos";
+const YOUTUBE_CHANNEL = "https://www.youtube.com/@ShaktishaliS/playlists";
 
 export default function Header() {
   const { lang } = useLanguage();
