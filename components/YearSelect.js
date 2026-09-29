@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 
-const years = [2026, 2025];
+const years = [2026, 2025, 2024];
 
 export default function YearSelect() {
   const router = useRouter();

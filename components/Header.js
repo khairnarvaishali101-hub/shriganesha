@@ -9,9 +9,10 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 import y2026 from "@/content/years/2026.json";
 import y2025 from "@/content/years/2025.json";
+import y2024 from "@/content/years/2024.json";
 
 // Add each new year's JSON import above and to this list (newest first).
-const years = [y2026, y2025];
+const years = [y2026, y2025, y2024];
 
 const YOUTUBE_CHANNEL = "https://www.youtube.com/@ShaktishaliS/playlists";
 

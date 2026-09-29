@@ -1,42 +1,53 @@
 "use client";
 
+import { useState } from "react";
+import Lightbox from "@/components/Lightbox";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 import certificates from "@/content/certificates.json";
 
 export function CertificateGrid({ items, lang }) {
+  const [openIndex, setOpenIndex] = useState(null);
   const t = (en, mr) => (lang === "en" ? en : mr);
+  const images = items.map((c) => c.image);
+
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-      {items.map((item) => (
-        <a
-          key={item.image}
-          href={item.image}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-2 border-marigold/70 rounded-2xl overflow-hidden bg-white/50 hover:-translate-y-1 hover:shadow-lg transition-all cursor-zoom-in"
-        >
-          <div className="relative aspect-[4/3] bg-haldi">
-            <img
-              src={item.image}
-              alt={item.title[lang]}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover object-top"
-            />
-            <span className="absolute top-2 right-2 text-[10px] font-sans bg-gabhara/80 text-haldi px-2 py-0.5 rounded-full">
-              🔍 {t("View", "पहा")}
-            </span>
-          </div>
-          <div className="p-3">
-            <p className="font-sans text-[10px] uppercase tracking-widest text-sindoor">
-              🏆 {formatYear(item.year, lang)}
-            </p>
-            <p className="font-display text-sm mt-1 leading-snug line-clamp-2">{item.title[lang]}</p>
-            {item.by && <p className="font-sans text-xs text-gabhara/60 mt-1">{item.by}</p>}
-          </div>
-        </a>
-      ))}
-    </div>
+    <>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {items.map((item, i) => (
+          <button
+            key={item.image}
+            onClick={() => setOpenIndex(i)}
+            className="text-left border-2 border-marigold/70 rounded-2xl overflow-hidden bg-white/50 hover:-translate-y-1 hover:shadow-lg transition-all cursor-zoom-in"
+          >
+            <div className="relative aspect-[4/3] bg-haldi">
+              <img
+                src={item.image}
+                alt={item.title[lang]}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="p-3">
+              <p className="font-sans text-[10px] uppercase tracking-widest text-sindoor">
+                🏆 {formatYear(item.year, lang)}
+              </p>
+              <p className="font-display text-sm mt-1 leading-snug line-clamp-2">{item.title[lang]}</p>
+              {item.by && <p className="font-sans text-xs text-gabhara/60 mt-1">{item.by}</p>}
+            </div>
+          </button>
+        ))}
+      </div>
+
+      <Lightbox
+        photos={images}
+        index={openIndex}
+        alt={t("Certificate", "प्रमाणपत्र")}
+        onClose={() => setOpenIndex(null)}
+        onPrev={() => setOpenIndex((i) => Math.max(0, i - 1))}
+        onNext={() => setOpenIndex((i) => Math.min(images.length - 1, i + 1))}
+      />
+    </>
   );
 }
 
@@ -52,7 +63,7 @@ export default function Certificates() {
           <h1 className="font-display text-3xl">{t("Awards & Recognition", "पुरस्कार आणि मान्यता")}</h1>
           <div className="w-16 h-1 bg-gold mx-auto rounded-full mt-3" />
           <p className="font-sans text-sm text-gabhara/70 mt-3">
-            {t("Tap a certificate to view it full size", "पूर्ण आकारात पाहण्यासाठी प्रमाणपत्रावर टॅप करा")}
+            {t("Tap a certificate to view it", "पाहण्यासाठी प्रमाणपत्रावर टॅप करा")}
           </p>
         </div>
 

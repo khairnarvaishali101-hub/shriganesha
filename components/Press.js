@@ -1,13 +1,18 @@
 "use client";
 
+import { useState } from "react";
+import Lightbox from "@/components/Lightbox";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 import press from "@/content/press.json";
 
 export default function Press() {
   const { lang } = useLanguage();
+  const [openIndex, setOpenIndex] = useState(null);
   const t = (en, mr) => (lang === "en" ? en : mr);
+
   const years = [...new Set(press.map((p) => p.year))].sort((a, b) => b - a);
+  const allImages = press.map((p) => p.image); // lightbox navigates across everything, in file order
 
   return (
     <section className="px-4 sm:px-6 py-12">
@@ -16,7 +21,7 @@ export default function Press() {
           <h1 className="font-display text-3xl">{t("In the News", "प्रसिद्धी")}</h1>
           <div className="w-16 h-1 bg-gold mx-auto rounded-full mt-3" />
           <p className="font-sans text-sm text-gabhara/70 mt-3">
-            {t("Tap a clipping to read it full size", "पूर्ण आकारात वाचण्यासाठी कात्रणावर टॅप करा")}
+            {t("Tap a clipping to read it", "वाचण्यासाठी कात्रणावर टॅप करा")}
           </p>
         </div>
 
@@ -34,12 +39,10 @@ export default function Press() {
               {press
                 .filter((item) => item.year === year)
                 .map((item) => (
-                  <a
+                  <button
                     key={item.image}
-                    href={item.image}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border border-gold/50 rounded-xl overflow-hidden bg-white/40 hover:-translate-y-0.5 hover:shadow-md transition-all cursor-zoom-in"
+                    onClick={() => setOpenIndex(allImages.indexOf(item.image))}
+                    className="text-left border border-gold/50 rounded-xl overflow-hidden bg-white/40 hover:-translate-y-0.5 hover:shadow-md transition-all cursor-zoom-in"
                   >
                     <div className="relative aspect-[4/3] bg-haldi">
                       <img
@@ -57,12 +60,21 @@ export default function Press() {
                         {item.date ? formatYear(item.date, lang) : ""}
                       </p>
                     </div>
-                  </a>
+                  </button>
                 ))}
             </div>
           </div>
         ))}
       </div>
+
+      <Lightbox
+        photos={allImages}
+        index={openIndex}
+        alt={t("Newspaper clipping", "वर्तमानपत्रातील कात्रण")}
+        onClose={() => setOpenIndex(null)}
+        onPrev={() => setOpenIndex((i) => Math.max(0, i - 1))}
+        onNext={() => setOpenIndex((i) => Math.min(allImages.length - 1, i + 1))}
+      />
     </section>
   );
 }
