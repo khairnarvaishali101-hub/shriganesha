@@ -7,9 +7,10 @@ import Reviews from "@/components/Reviews";
 import y2026 from "@/content/years/2026.json";
 import y2025 from "@/content/years/2025.json";
 import y2024 from "@/content/years/2024.json";
+import y2023 from "@/content/years/2023.json";
 
 // Newest first. Add each new year: import it above and add it here.
-const yearsData = [y2026, y2025, y2024];
+const yearsData = [y2026, y2025, y2024, y2023];
 const latest = yearsData[0];
 
 
@@ -38,8 +39,8 @@ export default function Home() {
 
         <p className="font-sans text-haldi/80 text-sm mt-5 max-w-md mx-auto">
           {t(
-            "Swipe through the years below — each card opens that year's theme, photos and video. The menu ☰ has our story, news and awards.",
-            "खालील वर्षांमधून स्वाइप करा — प्रत्येक कार्ड त्या वर्षाची थीम, फोटो आणि व्हिडिओ उघडतं. मेनू ☰ मध्ये आमची गोष्ट, बातम्या आणि पुरस्कार आहेत."
+            "Swipe through the years below — each card opens that year's theme, photos and video. The menu ☰ has our story, newspaper and awards.",
+            "खालील वर्षांमधून स्वाइप करा — प्रत्येक कार्ड त्या वर्षाची थीम, फोटो आणि व्हिडिओ उघडतं. मेनू ☰ मध्ये आमची गोष्ट, वर्तमानपत्रं आणि पुरस्कार आहेत."
           )}
         </p>
       </section>
@@ -48,7 +49,7 @@ export default function Home() {
       <section className="bg-gabhara text-haldi py-14 border-t border-gold/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center px-6">
-            <h2 className="font-display text-3xl text-marigold">{t("The years", "वर्षानुवर्षे")}</h2>
+            <h2 className="font-display text-3xl text-marigold">{t("Ganpati Bappa's decorations — through the years", "गणपती बाप्पांची सजावट — वर्षानुवर्षे")}</h2>
             <p className="font-sans text-haldi/60 text-sm mt-2">
               {t("Swipe to travel back through the years", "वर्षांमधून मागे जाण्यासाठी स्वाइप करा")}
             </p>

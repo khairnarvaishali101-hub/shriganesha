@@ -40,6 +40,10 @@ export default function About() {
         <p className="text-sindoor font-display text-xl">
           {t("This is the story of our decorations for Bappa. ❤️🙏", "हीच आमच्या बाप्पांच्या सजावटींची कहाणी. ❤️🙏")}
         </p>
+
+                <p className="font-sans text-sm text-gabhara/70 mt-4">
+          {t("— The Shimpi family", "— शिंपी कुटुंब")}
+        </p>
       </div>
     </main>
   );

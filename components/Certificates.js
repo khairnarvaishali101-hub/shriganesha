@@ -32,8 +32,8 @@ export function CertificateGrid({ items, lang }) {
               <p className="font-sans text-[10px] uppercase tracking-widest text-sindoor">
                 🏆 {formatYear(item.year, lang)}
               </p>
-              <p className="font-display text-sm mt-1 leading-snug line-clamp-2">{item.title[lang]}</p>
-              {item.by && <p className="font-sans text-xs text-gabhara/60 mt-1">{item.by}</p>}
+              <p className="font-display text-sm mt-1 leading-snug line-clamp-2 min-h-[2.6rem]">{item.title[lang]}</p>
+              {item.by && <p className="font-sans text-xs text-gabhara/60 mt-1 line-clamp-1">{item.by}</p>}
             </div>
           </button>
         ))}

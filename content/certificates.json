@@ -2,24 +2,6 @@
   {
     "year": 2026,
     "title": {
-      "en": "Certificate of Honour · Eco-friendly Ganeshotsav 2026 — 'Utsav Ganarayacha, Utsav Paryavaranacha'",
-      "mr": "सन्मानपत्र · पर्यावरणपूरक गणेशोत्सव २०२६ — 'उत्सव गणरायाचा, उत्सव पर्यावरणाचा'"
-    },
-    "by": "Panvel Mahanagarpalika · पनवेल महानगरपालिका",
-    "image": "/certificates/2026-panvel-mahanagarpalika.jpg"
-  },
-  {
-    "year": 2026,
-    "title": {
-      "en": "Participation Certificate · MahaMTB Eco-friendly Ganesha 2026 — home Ganesh murti & makhar decoration competition",
-      "mr": "सहभाग प्रमाणपत्र · 'महाएमटीबी ईकोफ्रेंडली गणेशा २०२६' — पर्यावरणपूरक घरगुती गणेशमूर्ती व मखर सजावट स्पर्धा"
-    },
-    "by": "Mumbai Tarun Bharat · Maharashtra Pollution Control Board",
-    "image": "/certificates/2026-mahamtb-eco-friendly-ganesha.jpg"
-  },
-  {
-    "year": 2026,
-    "title": {
       "en": "Certificate of Honour · Home Ganeshotsav Decoration Competition 2026",
       "mr": "सन्मानपत्र · घरगुती गणेशोत्सव सजावट स्पर्धा २०२६"
     },
@@ -35,7 +17,46 @@
     "by": "Ganpati.TV · गणपती.टीव्ही, Mumbai (Dhruwa Patel)",
     "image": "/certificates/2026-ganpati.tv.jpg"
   },
+
+  {
+    "year": 2026,
+    "title": {
+      "en": "Participation Certificate · MahaMTB Eco-friendly Ganesha 2026 — home Ganesh murti & makhar decoration competition",
+      "mr": "सहभाग प्रमाणपत्र · 'महाएमटीबी ईकोफ्रेंडली गणेशा २०२६' — पर्यावरणपूरक घरगुती गणेशमूर्ती व मखर सजावट स्पर्धा"
+    },
+    "by": "Mumbai Tarun Bharat · Maharashtra Pollution Control Board",
+    "image": "/certificates/2026-mahamtb-eco-friendly-ganesha.jpg"
+  },
+  
     {
+    "year": 2026,
+    "title": {
+      "en": "Certificate of Honour · Eco-friendly Ganeshotsav 2026 — 'Utsav Ganarayacha, Utsav Paryavaranacha'",
+      "mr": "सन्मानपत्र · पर्यावरणपूरक गणेशोत्सव २०२६ — 'उत्सव गणरायाचा, उत्सव पर्यावरणाचा'"
+    },
+    "by": "Panvel Mahanagarpalika · पनवेल महानगरपालिका",
+    "image": "/certificates/2026-panvel-mahanagarpalika.jpg"
+  },
+    {
+    "year": 2026,
+    "title": {
+      "en": "Certificate of Honour · Shaurya Ganeshotsav — 'Divya Tejasvi Majhach Bappa Majhich Gauri' Competition 2026",
+      "mr": "सन्मानपत्र · शौर्य गणेशोत्सव — 'दिव्य तेजस्वी माझाच बाप्पा माझीच गौरी' स्पर्धा २०२६"
+    },
+    "by": "Shaurya Ranragini News · शौर्य रणरागिणी न्यूज",
+    "image": "/certificates/2026-shaurya-ranraginiNews.jpg"
+  },
+{
+    "year": 2026,
+    "title": {
+      "en": "Certificate of Honour · 'Activity Center' Ganpati Bappa Sajavat Competition 2026",
+      "mr": "सन्मानपत्र · ऍक्टिव्हिटी सेंटर  — 'गणपती बाप्पा सजावट' स्पर्धा २०२६"
+    },
+    "by": "Activity Center ·  ऍक्टिव्हिटी सेंटर",
+    "image": "/certificates/2026-activity center.jpg"
+  },
+
+  {
     "year": 2024,
     "title": {
       "en": "Result announcement · Encouragement Award — Home Ganeshotsav Decoration Competition 2024",
@@ -71,4 +92,5 @@
     "by": "Ganpati.TV · गणपती.टीव्ही, Mumbai",
     "image": "/certificates/2024-ganpati.tv.jpg"
   }
-]
+
+  ]
