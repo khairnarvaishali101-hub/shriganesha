@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import LanguageToggle from "@/components/LanguageToggle";
-import YearSelect from "@/components/YearSelect";
 import { useLanguage } from "@/components/LanguageProvider";
 import { formatYear } from "@/lib/marathiDigits";
 import y2026 from "@/content/years/2026.json";
@@ -82,7 +81,7 @@ export default function Header() {
           {links.map((l) => (
             <NavItem key={l.href} l={l} className={pill} />
           ))}
-          <YearSelect />
+          
           <LanguageToggle />
         </nav>
 
