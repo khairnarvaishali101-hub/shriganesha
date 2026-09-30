@@ -1,0 +1,26 @@
+[
+  {
+    "year": 2026,
+    "from": { "en": "A friend from Nashik", "mr": "नाशिकहून एक मैत्रीण" },
+    "text": {
+      "en": "The train, the old computer, the little AI clouds — and Bappa presiding over all of it. A beautiful idea, beautifully made.",
+      "mr": "रेल्वे, जुना संगणक, ते छोटे AI ढग — आणि या सगळ्यावर बाप्पांचा आशीर्वाद. सुंदर कल्पना, तितकीच सुंदर मांडणी."
+    }
+  },
+  {
+    "year": 2026,
+    "from": { "en": "A colleague, Dallas", "mr": "एक सहकारी, डॅलस" },
+    "text": {
+      "en": "Reduce, Reuse, Recreate — a Ganpati with a message. Loved every station.",
+      "mr": "Reduce, Reuse, Recreate — संदेश देणारा गणपती. प्रत्येक स्थानक आवडलं."
+    }
+  },
+  {
+    "year": 2024,
+    "from": { "en": "An aunt in Pune", "mr": "पुण्याहून एक मावशी" },
+    "text": {
+      "en": "A whole Marathi year of festivals around Bappa — Gudi Padwa to Holi. We felt at home in Dallas.",
+      "mr": "बाप्पांभोवती मराठी वर्षभराचे सण — गुढीपाडव्यापासून होळीपर्यंत. डॅलसमध्ये घरी असल्यासारखं वाटलं."
+    }
+  }
+]
