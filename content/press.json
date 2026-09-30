@@ -70,7 +70,16 @@
     },
     "image": "/press/2023/News.jpg"
   },
-
+{
+    "year": 2023,
+    "outlet": "Nashik Sakal · नाशिक सकाळ",
+    "date": "2023-09",
+    "title": {
+      "en": "Vaishali Shimpi has a replica of Chandrayaan-3 in America",
+      "mr": "अमेरिकेत वैशाली शिंपी यांच्याकडे चंद्रयान-३ ची प्रतिकृती"
+    },
+    "image": "/press/2023/nashiksakal.png"
+  },
   {
     "year": 2023,
     "outlet": "Nashik Vikas · नाशिक विकास",
