@@ -8,10 +8,11 @@ import y2026 from "@/content/years/2026.json";
 import y2025 from "@/content/years/2025.json";
 import y2024 from "@/content/years/2024.json";
 import y2023 from "@/content/years/2023.json";
-import y2023 from "@/content/years/2022.json";
+import y2022 from "@/content/years/2022.json";
+import y2021 from "@/content/years/2021.json";
 
 // Newest first. Add each new year: import it above and add it here.
-const yearsData = [y2026, y2025, y2024, y2023, y2022];
+const yearsData = [y2026, y2025, y2024, y2023, y2022, y2021];
 const latest = yearsData[0];
 
 
